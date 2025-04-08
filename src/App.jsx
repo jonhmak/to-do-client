@@ -6,6 +6,9 @@ dotenv.config();
 
 function App() {
   const navigate = useNavigate();
+
+   const apiUrl = import.meta.env.VITE_ENDPOINT_URL;
+  
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
